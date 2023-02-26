@@ -7,7 +7,7 @@ Conexión a base de datos
 import psycopg2 #Con esta libreria nos podremos conectar a postgres
 
 try:
-    conection = psycopg2.connect(database= "BaseDatos_Prueba", user= "postgres", password= "JP/oST+28?-ELUL")#Con esta linea de comandos nos conectamos a la base
+    conection = psycopg2.connect(database= "BaseDatos_Prueba", user= "postgres", password= "Contraseña_Prueba")#Con esta linea de comandos nos conectamos a la base
     cursor = conection.cursor()
     cursor.execute("select version()")
     version = cursor.fetchone()
